@@ -2,13 +2,13 @@
 
 Suggested homepage / promotional language:
 
-> Your collection. Your ultimate home theatre.
+> Your collection. A private performance.
 >
 > Lossless audio, original-quality video and the disc experience, brought together on Apple TV. Built for music lovers, audiophiles and the system you’ve made your own.
 
 Promotional text (under Apple's 170-character limit):
 
-> Your collection. Your ultimate home theatre. Lossless audio, films and concerts, with direct playback of supported Blu-ray and DVD copies and original menus.
+> Your collection. A private performance. Lossless audio, films and concerts, with direct playback of supported Blu-ray and DVD copies and original menus.
 
 Paragraph for a store description:
 

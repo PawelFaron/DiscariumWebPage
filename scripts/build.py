@@ -7,7 +7,7 @@ import json
 
 ROOT = Path(__file__).resolve().parents[1]
 PAGES = {
-    "index": ("Discarium — Your collection. Your ultimate home theatre.", "Lossless audio, original-quality video and compatible Blu-ray and DVD menus. Your own music and film collection, on Apple TV.", "home"),
+    "index": ("Discarium — Your collection. A private performance.", "Lossless audio, original-quality video and compatible Blu-ray and DVD menus. Your own music and film collection, on Apple TV.", "home"),
     "compatibility": ("Formats & compatibility — Discarium", "Audio, video and disc formats supported by Discarium on Apple TV, including lossless surround sound, HDR10 and original disc menus.", "document"),
     "support": ("Support — Discarium", "Set up your collection, connect your receiver and get help with Discarium for Apple TV. Contact the developer directly.", "document"),
     "privacy": ("Privacy policy — Discarium", "How Discarium handles your library, network connections, playback history and support requests. Privacy choices and data deletion.", "document"),
