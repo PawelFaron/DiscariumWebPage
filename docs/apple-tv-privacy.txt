@@ -1,0 +1,22 @@
+Discarium Privacy Policy
+Effective 6 October 2026
+Developer: Pawel Faron
+Contact: discarium@pisz.to
+
+Discarium has no app account, advertising, tracking SDK or developer analytics service. The app does not send your media, library, playback history or network-drive passwords to the developer.
+
+Your collections, filenames, metadata, artwork, playlists, favorites, tags, ratings, notes, settings, playback positions, audio/subtitle choices and download information are stored locally on Apple TV. Network-drive passwords use Apple's Keychain. Discarium reads your selected media sources without modifying the originals.
+
+The app connects to the SMB drives and UPnP/DLNA servers you choose. Discovery sends requests on your network. Browsing, playback and downloading send the requests and authentication information needed by those servers. A media server can supply artwork or media links on other servers. Those services receive requests and may keep logs under their own policies; the requests do not pass through the developer's servers. Use services you trust.
+
+Local information remains while the app retains its data. tvOS may remove cached downloads when storage is needed. Remove downloads in Settings > Downloads, including partial files. Remove a connection in Settings > Connections to remove its configuration and collection locations. Revoke credentials on the server to fully revoke access. Keychain items can persist across app installations. Revoke Local Network permission in Apple TV Settings > Privacy & Security > Local Network. Deleting the app removes its local app data and downloads, but Apple or your server may retain their own data. The developer cannot access or delete data held only on your Apple TV.
+
+If you contact support, the developer receives your email address, message and chosen attachments, uses them to answer and investigate your request, and retains them for up to 12 months after the last exchange unless an ongoing dispute or legal obligation requires longer. You can request earlier deletion. Email providers process correspondence to deliver the service. Do not send passwords or private media.
+
+Apple processes TestFlight installation information, diagnostics and feedback under its privacy policy and may share reports with the developer. Apple controls retention of that data. Public GitHub issues are public and handled by GitHub; use email for private requests.
+
+The Discarium website uses no analytics/advertising cookies, browser storage or tracking services. GitHub Pages hosts it and logs visitors' IP addresses for security; GitHub controls hosting retention under its Privacy Statement. External services have their own privacy practices.
+
+For privacy questions, access, correction or deletion requests, contact discarium@pisz.to. Depending on your location, you may have additional rights to restrict or object to processing, request portability or complain to a data protection authority. Support messages are processed to respond to your request and, where applicable, on the basis of legitimate interests in supporting the app.
+
+The full policy and any updates are published at https://pawelfaron.github.io/DiscariumWebPage/privacy.html. The effective date identifies this version.

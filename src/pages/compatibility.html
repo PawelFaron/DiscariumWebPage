@@ -1,0 +1,285 @@
+<section class="page-heading wrap">
+  <p class="eyebrow">FORMATS & COMPATIBILITY</p>
+  <h1>Every format<br />has a <em>story.</em></h1>
+  <p>Here is what Discarium plays, and what reaches your system.</p>
+  <p class="fine-print">
+    Current TestFlight build · Version 1.0 · tvOS 27 or later
+  </p>
+</section>
+<div class="document-layout wrap">
+  <nav class="on-this-page" aria-label="On this page">
+    <span class="eyebrow">EXPLORE</span><a href="#discs">Discs & menus</a
+    ><a href="#audio">Audio</a><a href="#video">Video</a
+    ><a href="#output">Output & processing</a
+    ><a href="#connections">Connections</a>
+  </nav>
+  <div class="document-body">
+    <section id="discs">
+      <h2>The disc experience.</h2>
+      <p>
+        Discarium reads supported disc copies directly on Apple TV. A server
+        supplies files; it does not need to convert them into a streaming
+        version first.
+      </p>
+      <div
+        class="table-scroll"
+        tabindex="0"
+        role="region"
+        aria-label="Disc compatibility table"
+      >
+        <table>
+          <caption>
+            Discs and original menus
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Source</th>
+              <th scope="col">Current support</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Blu-ray folders & ISO</th>
+              <td>
+                Supported unencrypted copies. Programs, chapters and audio-track
+                selection.
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Blu-ray HDMV menus</th>
+              <td>
+                Compatible original interactive menus, controlled with the
+                remote. Authored features and disc compatibility vary.
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">DVD-Video folders & ISO</th>
+              <td>
+                Supported titles, chapters and compatible original DVD menus.
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">DVD-Audio</th>
+              <td>
+                Supported audio programs and tracks. Universal original
+                DVD-Audio menu navigation is not promised.
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Blu-ray BD-J menus</th>
+              <td>
+                Not included in the current release. These Java-based menus
+                differ from HDMV menus.
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Encrypted discs</th>
+              <td>
+                Not supported. Discarium does not remove AACS, BD+ or DVD
+                encryption.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>
+        Use complete disc copies that you are entitled to access. Missing files,
+        unusual authoring, secondary streams or publisher-dependent features may
+        prevent a disc from working as expected.
+      </p>
+    </section>
+    <section id="audio">
+      <h2>Lossless, from the source.</h2>
+      <div
+        class="table-scroll"
+        tabindex="0"
+        role="region"
+        aria-label="Audio format table"
+      >
+        <table>
+          <caption>
+            Audio formats
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Format</th>
+              <th scope="col">Playback</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">FLAC, ALAC, WAV, AIFF, WavPack</th>
+              <td>
+                Supported lossless sources, including high-resolution recordings
+                up to 24-bit/192 kHz.
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Stereo, 5.1 & 7.1</th>
+              <td>
+                Supported discrete channel layouts. Available output channels
+                depend on the playback path and connected equipment.
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">LPCM & DVD-Audio MLP</th>
+              <td>Supported channel-based audio decoded to PCM.</td>
+            </tr>
+            <tr>
+              <th scope="row">DTS-HD Master Audio & Dolby TrueHD</th>
+              <td>
+                Supported decoding to multichannel PCM. This does not preserve
+                Atmos or DTS:X object output.
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">MP3, AAC, Dolby Digital & DTS</th>
+              <td>
+                Supported common lossy audio formats. Decoding cannot restore
+                information removed by the original compression.
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Gapless</th>
+              <td>
+                Playback between compatible tracks with matching formats on the
+                supported playback path.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>
+        Volume normalization and crossfade are off by default. Optional
+        processing changes the sound; check Sound details and your playback
+        settings when fidelity is the priority.
+      </p>
+    </section>
+    <section id="video">
+      <h2>The picture, without another encode.</h2>
+      <p>
+        Most films and disc video are already compressed. “Without re-encoding”
+        means Discarium does not add another lossy video encode to supported
+        playback; it does not turn a compressed film into a lossless original.
+      </p>
+      <div
+        class="table-scroll"
+        tabindex="0"
+        role="region"
+        aria-label="Video format table"
+      >
+        <table>
+          <caption>
+            Video and display features
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Feature</th>
+              <th scope="col">Current support</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">MKV and other supported video files</th>
+              <td>
+                Direct playback of compatible video/audio streams. A container
+                name alone does not guarantee every codec or feature inside it.
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">AVC / H.264, HEVC / H.265 & MPEG-2</th>
+              <td>
+                Supported decoding, including compatible 4K HEVC and disc video.
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Resolution & HDR10</th>
+              <td>
+                Original-resolution decoding with supported HDR10 on compatible
+                equipment. Display output depends on tvOS and the HDMI chain.
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Dolby Vision disc video</th>
+              <td>
+                Full Dolby Vision disc playback is not supported. Do not assume
+                a Dolby Vision source label guarantees Dolby Vision output.
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Subtitles & chapters</th>
+              <td>
+                Supported embedded and sidecar subtitles, text
+                appearance/encoding controls, available embedded chapters and
+                chapter markers.
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Resume & buffering</th>
+              <td>
+                Saved video position and audio/subtitle choices. A separate
+                buffering setting for video.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section id="output">
+      <h2>Source quality. Output clarity.</h2>
+      <p>
+        A file’s format, the decoded signal and the HDMI output are three
+        different things. Discarium shows what it knows about the source and the
+        output reported by tvOS.
+      </p>
+      <ul>
+        <li>
+          <strong>No universal bit-perfect guarantee.</strong> tvOS can change
+          sample rate, channel count or processing. Matching reported values do
+          not measure every sample at the receiver.
+        </li>
+        <li>
+          <strong>PCM is a valid lossless audio output.</strong> Decoding a
+          supported lossless codec to PCM preserves its channel-based audio; it
+          does not require the receiver to display the original codec name.
+        </li>
+        <li>
+          <strong>Surround channels and sound objects differ.</strong> TrueHD
+          Atmos and DTS:X object output are not supported in this release.
+        </li>
+        <li>
+          <strong>Video still goes through a display pipeline.</strong>
+          Frame-rate matching, color conversion, deinterlacing, tone mapping and
+          television settings can affect the result even without video
+          re-encoding.
+        </li>
+      </ul>
+      <p>
+        Connect Apple TV over HDMI, check Sound details and Video details, and
+        use your receiver and TV’s information displays to confirm the actual
+        signal.
+      </p>
+    </section>
+    <section id="connections">
+      <h2>Your media, where you keep it.</h2>
+      <p>
+        Connect <strong>SMB network drives</strong> and
+        <strong>UPnP/DLNA media servers</strong>. Browse supported local media
+        and completed downloads on Apple TV. Other network protocols are not
+        advertised as supported.
+      </p>
+      <p>
+        A UPnP/DLNA server chooses the resources it exposes and may offer a
+        converted version. For original files, configure the server accordingly
+        or access the originals through SMB.
+      </p>
+      <p>
+        Offline albums and supported disc copies are saved without conversion.
+        tvOS can reclaim this storage, so keep your source collection elsewhere.
+      </p>
+      <a class="button" href="support.html"
+        >Need help with a format? <span aria-hidden="true">↗</span></a
+      >
+    </section>
+  </div>
+</div>
