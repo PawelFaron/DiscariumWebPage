@@ -26,21 +26,15 @@
         your receiver/TV model are useful. Please leave out passwords and
         private media.
       </p>
-      <p>
-        Using TestFlight? You can also choose
-        <strong>Send Beta Feedback</strong> in TestFlight.
-      </p>
     </section>
     <section id="get-started">
       <h2>Your first evening with Discarium.</h2>
       <ol class="steps">
         <li>
-          <h3>Install the app.</h3>
+          <h3>Open Discarium.</h3>
           <p>
-            Discarium is currently in TestFlight. If you have an invitation,
-            accept it with the invited Apple Account, then open TestFlight on
-            Apple TV and choose Discarium → Install or Update. There is no
-            public TestFlight invitation link at present.
+            Open Discarium on Apple TV. Start with the included demo or connect
+            your own collection.
           </p>
         </li>
         <li>
@@ -88,8 +82,7 @@
         <p>
           Start with automatic SMB version selection and the server’s usual
           port. If you are connecting from outside your home, your network must
-          provide a route to the server, for example through a VPN. Discarium
-          does not provide a remote-access relay.
+          provide a route to the server, for example through a VPN.
         </p>
       </details>
       <details>
@@ -102,7 +95,8 @@
         </p>
         <p>
           Video has its own buffering setting. Increasing it may help with brief
-          interruptions, but cannot make a consistently slow connection faster.
+          interruptions. A wired connection is a good starting point for large
+          video files.
         </p>
       </details>
       <details>
@@ -146,58 +140,49 @@
         </p>
       </details>
       <details>
-        <summary>Why doesn’t the output always match my 192 kHz file?</summary>
+        <summary>Where can I check the audio quality?</summary>
         <p>
-          Source support and HDMI output are different. Discarium can decode
-          high-resolution files up to 24-bit/192 kHz, but tvOS and connected
-          equipment determine the actual output format. A matching reported
-          sample rate alone is not proof of a bit-perfect HDMI signal.
+          Open <strong>Sound details</strong> during playback to see the codec,
+          bit depth, sample rate and channels. Discarium shows the source
+          alongside the output reported by Apple TV.
         </p>
         <p>
-          The app shows source and output information so changes are visible.
-          See <a href="compatibility.html#output">Output and processing</a>.
-        </p>
-      </details>
-      <details>
-        <summary>Does a lossless soundtrack mean Atmos or DTS:X?</summary>
-        <p>
-          No. Dolby TrueHD and DTS-HD Master Audio can be decoded to lossless
-          channel-based PCM. Preserving their audio samples is separate from
-          rendering Atmos or DTS:X sound objects. TrueHD Atmos and DTS:X object
-          output are not supported in the current release.
-        </p>
-        <p>
-          A source label describes what is in the file; it is not a promise that
-          your receiver receives that format unchanged.
+          High-resolution source support goes up to 24-bit/192 kHz. The HDMI
+          output format is determined by tvOS and your connected equipment.
         </p>
       </details>
       <details>
-        <summary>Why will a disc menu not open?</summary>
+        <summary>How are Dolby TrueHD and DTS-HD Master Audio played?</summary>
         <p>
-          The current release supports compatible
-          <strong>Blu-ray HDMV</strong> and <strong>DVD-Video</strong> menus.
-          <strong>BD-J</strong> menus use a different, Java-based system and are
-          not included in this release. Encrypted discs are not supported.
-        </p>
-        <p>
-          Make sure the copy is complete. Where available, use the disc’s
-          program and chapter list to play supported content without its
-          original menu. See
-          <a href="compatibility.html#discs">Disc compatibility</a>.
+          Discarium decodes these lossless soundtracks to multichannel PCM for
+          your HDMI receiver. Sound details shows the recording’s format,
+          channel layout and reported output.
         </p>
       </details>
       <details>
-        <summary>What about 4K, HDR and Dolby Vision?</summary>
+        <summary>How do I use original disc menus?</summary>
         <p>
-          Supported video is decoded at its original resolution without app-side
-          re-encoding or deliberate resolution reduction. Supported 4K HEVC and
-          HDR10 require compatible Apple TV, TV/receiver and HDMI settings. Full
-          Dolby Vision playback from disc copies is not supported.
+          Open a disc and choose <strong>Open disc menu</strong>. Use your
+          remote to navigate compatible <strong>Blu-ray HDMV</strong> and
+          <strong>DVD-Video</strong> menus.
         </p>
         <p>
-          Video details describes the source. Your display, tvOS output settings
-          and the playback path still affect the picture that reaches the
-          television.
+          You can also browse the disc’s programs, chapters and soundtracks from
+          its detail screen. See
+          <a href="compatibility.html#discs">supported disc formats</a>.
+        </p>
+      </details>
+      <details>
+        <summary>How do I play 4K and HDR10 video?</summary>
+        <p>
+          Use compatible Apple TV, receiver, display and HDMI connections.
+          Discarium plays supported 4K HEVC and HDR10 video at the source
+          resolution, without additional video re-encoding.
+        </p>
+        <p>
+          Open Video details to see the resolution, frame rate and available HDR
+          information. Check your television’s information display for the
+          active picture mode.
         </p>
       </details>
     </section>
@@ -211,13 +196,11 @@
           Open <strong>Settings → Subtitles</strong>. UTF-8 is the best starting
           point for modern text subtitles. For an older subtitle file, select
           its original encoding, such as Windows-1250 for many Central European
-          subtitles. A different font cannot repair text decoded with the wrong
-          encoding.
+          subtitles.
         </p>
         <p>
-          You can also adjust size, position, color and timing. Bitmap subtitles
-          already contain drawn text, so text font and encoding settings do not
-          apply to them.
+          For text subtitles, you can also adjust size, position, color and
+          timing.
         </p>
       </details>
       <details>

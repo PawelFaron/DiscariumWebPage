@@ -49,7 +49,7 @@ Docelowe adresy po poprawnym wdrożeniu:
 - Zawsze po edycji treści uruchom `python3 scripts/build.py`, a następnie `python3 scripts/verify.py`. Commituj również wygenerowane strony w `site/`.
 - Gdy zmieniasz domenę lub nazwę repo, zmień `base_url` i przebuduj strony. Zwykłe odnośniki są względne; canonical, Open Graph, sitemap i strona 404 korzystają z `base_url`.
 
-Teksty są po angielsku, zgodnie z głównym językiem sklepu. Informacja o sześciu językach dotyczy interfejsu aplikacji. Strona nie udaje publicznego wydania: obecnie opisuje wersję 1.0 w TestFlight. Po wydaniu zmień status w `src/pages/index.html` i instrukcję instalacji w `support.html`, dodając działający link do App Store.
+Teksty są po angielsku, zgodnie z głównym językiem sklepu. Informacja o sześciu językach dotyczy interfejsu aplikacji. Strona jest przygotowana do wydania produkcyjnego. Prezentuje obsługiwane funkcje, zrzuty aplikacji i instrukcję konfiguracji kolekcji. Po zatwierdzeniu aplikacji można dodać działający odnośnik do jej strony w App Store.
 
 ## Prywatność i źródła
 

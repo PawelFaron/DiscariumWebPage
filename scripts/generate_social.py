@@ -28,7 +28,7 @@ def main():
     draw.text((73, 482), "Discs, music and video. Made for Apple TV.", font=font(23), fill="#b3b5ae")
     draw.line((70, 566, 1130, 566), fill="#343830", width=1)
     draw.text((73, 585), "DISCARIUM · LOSSLESS PLAYER", font=font(12), fill="#b3b5ae")
-    with Image.open(ASSETS / "orbit.webp") as screen:
+    with Image.open(ASSETS / "audio.webp") as screen:
         screen.thumbnail((482, 272))
         image.paste(screen, (663, 193))
     draw.rectangle((658, 188, 1149, 469), outline="#464a42", width=3)
