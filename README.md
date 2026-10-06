@@ -24,7 +24,9 @@ Repozytorium: https://github.com/PawelFaron/DiscariumWebPage
 4. Poczekaj na zielony wynik i otwórz adres z kroku `Deploy`. Sprawdź stronę w prywatnym oknie, bez logowania do GitHuba.
 5. W Pages sprawdź **Enforce HTTPS**, jeśli GitHub pokazuje tę opcję. Dla adresu `github.io` HTTPS jest zapewniane przez GitHub.
 
-Deployment jest **ręczny**. Push uruchamia wyłącznie sprawdzenie plików. Witryna nie została wypchnięta ani opublikowana przez autora zmian.
+Deployment jest **ręczny**. Push uruchamia wyłącznie sprawdzenie plików. Witryna została opublikowana i sprawdzona 6 października 2026: https://pawelfaron.github.io/DiscariumWebPage/.
+
+**Jeśli zamiast strony pojawia się ten README:** Pages publikuje główny katalog gałęzi. Ustaw Source na **GitHub Actions** i uruchom workflow **Deploy GitHub Pages** — publikuje on gotową witrynę z `site/`. Nie wybieraj `Deploy from a branch → main → / (root)`. Ta konfiguracja została już poprawiona w repozytorium.
 
 Docelowe adresy po poprawnym wdrożeniu:
 

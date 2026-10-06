@@ -9,4 +9,10 @@
 - Tested navigation, support contact, privacy content and FAQ with **JavaScript disabled**; essential content remains accessible. Gallery enhancement is optional.
 - Reduced-motion preference is supported in CSS. There is no timed motion or auto-advancing carousel.
 
-These are local Chromium checks, not a test of the deployed GitHub site or a physical phone. After deploying, check the actual HTTPS pages in a signed-out/private browser window and confirm the public mailbox receives messages.
+These layout checks use Chromium viewport emulation, not a physical phone. Confirm separately that the public mailbox receives messages.
+
+## Production deployment
+
+On 6 October 2026, GitHub Pages was serving a Jekyll rendering of the repository README because its source was `main / (root)`. Changed Pages `build_type` from `legacy` to `workflow`, then deployed the already-pushed commit `bc92bc0` using **Deploy GitHub Pages**. No Git push was performed.
+
+[Deployment run 37484389227](https://github.com/PawelFaron/DiscariumWebPage/actions/runs/37484389227) completed successfully. A fresh, signed-out browser context loaded the public homepage, support, privacy, compatibility and source pages: all returned HTTP 200 and their expected product headings. Images and the interactive gallery loaded; no JavaScript errors were reported. Inspected the deployed homepage screenshot in `build/deployed-fixed.png`.
