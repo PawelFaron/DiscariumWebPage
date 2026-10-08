@@ -1,5 +1,12 @@
 # Verification
 
+## Copy cleanup — 8 October 2026
+
+- Removed public review/approval statuses and "Coming in" labels from Updates, the homepage, formats and page metadata.
+- Removed the Open source page, its footer link and sitemap entry; adjusted the generator and verifier to the six remaining pages.
+- Kept version-specific feature notes and the verified App Store link.
+- Regenerated the site and verified local links, anchors, contact details, metadata and JavaScript syntax.
+
 ## Release information update — 8 October 2026
 
 - Confirmed the public App Store product URL returns HTTP 200. Apple's public lookup API for Poland identifies **Discarium: Lossless Player**, version **1.0**, released 8 October 2026.

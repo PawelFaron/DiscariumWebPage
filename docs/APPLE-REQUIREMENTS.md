@@ -27,7 +27,7 @@ Sprawdzono **6 października 2026** w oficjalnej dokumentacji Apple i GitHub. Do
 - „Native disc playback” opisujemy jako bezpośrednie odtwarzanie kopii na Apple TV, bez wcześniejszej konwersji na serwerze. To nie deklaracja obsługi każdej płyty ani usuwania szyfrowania.
 - „Lossless audio” nie oznacza gwarancji bit-perfect HDMI lub odtwarzania obiektów TrueHD Atmos/DTS:X. Wideo z płyt jest zwykle już stratnie skompresowane; prawidłowa deklaracja to brak **dodatkowego** stratnego kodowania przez aplikację.
 - Strona zawiera informację o logach GitHub Pages: brak analityki w naszym kodzie nie oznacza, że hosting nie zapisuje adresów IP.
-- Pełne warunki dystrybucji aplikacji GPL/LGPL pozostają osobną sprawą. Witryna zapewnia informację o źródłach; właściciel musi faktycznie dostarczać odpowiadający kod odbiorcom.
+- Licencje i dostarczanie odpowiadających źródeł aplikacji GPL/LGPL są utrzymywane w repo aplikacji, niezależnie od witryny produktu.
 - Dostępność wersji językowej nie zmienia regionów dystrybucji. Wcześniejsze wyłączenie Francji pozostaje decyzją aplikacji, nie ustawieniem witryny.
 
 ## Źródła

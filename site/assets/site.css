@@ -344,24 +344,6 @@ strong {
 .release-preview .text-link {
   flex-shrink: 0;
 }
-.release-status {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px 18px;
-  align-items: center;
-  font-size: 13px;
-  color: var(--muted);
-  margin-bottom: 24px;
-}
-.release-status span {
-  padding: 4px 12px;
-  border: 1px solid var(--line);
-  border-radius: 20px;
-  color: var(--accent);
-}
-.release-status time {
-  font-variant-numeric: tabular-nums;
-}
 .section-heading {
   margin-bottom: 62px;
 }

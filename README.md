@@ -1,8 +1,8 @@
 # Discarium website
 
-Strona produktu, nowości, pomoc, formaty, polityka prywatności i źródła aplikacji **Discarium: Lossless Player**. Statyczny HTML/CSS, mały skrypt galerii, bez frameworka, usług analitycznych, cookies i zewnętrznych fontów. Publiczny kontakt: **discarium@pisz.to**.
+Strona produktu, nowości, pomoc, formaty i polityka prywatności aplikacji **Discarium: Lossless Player**. Statyczny HTML/CSS, mały skrypt galerii, bez frameworka, usług analitycznych, cookies i zewnętrznych fontów. Publiczny kontakt: **discarium@pisz.to**.
 
-Aktualizacja treści: **8 października 2026**. Wersja **1.0 (24)** jest dostępna w App Store; **1.1 (28)** czeka na App Review. Strona ma zweryfikowany odnośnik do sklepu i historię zmian w `updates.html`. Zmiany tego commita wymagają pusha oraz ręcznego deploymentu przez właściciela.
+Aktualizacja treści: **8 października 2026**. Strona ma zweryfikowany odnośnik do sklepu i informacje o zmianach w `updates.html`. Pokazuje funkcje i numery wersji bez statusów procesu publikacji. Zmiany wymagają pusha oraz ręcznego deploymentu przez właściciela.
 
 ## Uruchom lokalnie
 
@@ -51,14 +51,12 @@ Docelowe adresy po poprawnym wdrożeniu:
 - Zawsze po edycji treści uruchom `python3 scripts/build.py`, a następnie `python3 scripts/verify.py`. Commituj również wygenerowane strony w `site/`.
 - Gdy zmieniasz domenę lub nazwę repo, zmień `base_url` i przebuduj strony. Zwykłe odnośniki są względne; canonical, Open Graph, sitemap i strona 404 korzystają z `base_url`.
 
-Teksty są po angielsku, zgodnie z głównym językiem sklepu. Informacja o sześciu językach dotyczy interfejsu aplikacji. Strona prezentuje obsługiwane funkcje, zrzuty aplikacji i instrukcję konfiguracji kolekcji. Link `https://apps.apple.com/app/id6819356965` został sprawdzony po publikacji 1.0. Nowości 1.1 są oznaczone jako oczekujące na zatwierdzenie.
+Teksty są po angielsku, zgodnie z głównym językiem sklepu. Informacja o sześciu językach dotyczy interfejsu aplikacji. Strona prezentuje obsługiwane funkcje, zrzuty aplikacji i instrukcję konfiguracji kolekcji. Link `https://apps.apple.com/app/id6819356965` został sprawdzony po publikacji 1.0.
 
-Po publikacji 1.1 zaktualizuj status w `src/pages/updates.html`, zapowiedź na stronie głównej oraz wersję w `source.html`. W `support.html` i `compatibility.html` usuń oznaczenia „Coming in”, zachowując wskazówki dla użytkowników starszej wersji. Nie zmieniaj daty polityki prywatności przy aktualizacji samych informacji o wydaniu.
+Informacje o kolejnych wersjach dodawaj do `src/pages/updates.html`, zachowując w pomocy wskazówki dla użytkowników starszych wersji. Nie dodawaj komunikatów o oczekiwaniu na publikację. Nie zmieniaj daty polityki prywatności przy aktualizacji samych informacji o wydaniu.
 
-## Prywatność i źródła
+## Prywatność
 
 Polityka rozróżnia dane lokalne aplikacji, żądania do serwerów użytkownika, TestFlight, zgłoszenia przez e-mail i logi hostingu GitHub Pages. Deklaruje przechowywanie korespondencji wsparcia do 12 miesięcy od ostatniej wymiany, z wyjątkami dla aktywnego sporu lub obowiązku prawnego. Właściciel musi stosować tę zasadę albo dostosować politykę przed publikacją. Dane recenzenta Apple i prywatne hasła nie są publikowane.
 
-Strona `source.html` zawiera publiczny kontakt w sprawie odpowiadających źródeł konkretnego buildu. W repo aplikacji znajduje się aktualny pakiet `build/testflight/Discarium-1.1-28-CorrespondingSource.tar.gz` (SHA-256 `4b305618375b11dee81a0e3df29ef06421e2272852bc606ac4255be577d91bff`). Zachowaj też pakiety wcześniejszych wydań dla ich odbiorców. Pakiet można udostępnić jako Release asset w **repo aplikacji** i dodać sprawdzony publiczny URL do `src/pages/source.html`. Dużych archiwów nie dodawaj do zwykłego commita Git.
-
-Strona zawiera działający link App Store. Linki do archiwów źródeł można dodać po ich publikacji; obecnie odbiorcy kontaktują się w tej sprawie przez publiczny e-mail.
+Strona nie ma podstrony Open source ani odnośników do kodu. Licencje i pakiety odpowiadających źródeł są utrzymywane w repo aplikacji.

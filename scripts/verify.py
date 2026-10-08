@@ -60,7 +60,7 @@ def main():
             assert target.is_file(), f"Broken link in {path.name}: {link}"
             if url.fragment and target in docs:
                 assert unquote(url.fragment) in docs[target].ids, f"Broken anchor in {path.name}: {link}"
-    for page in ("support", "privacy", "source"):
+    for page in ("support", "privacy"):
         assert f"mailto:{email}" in (SITE / f"{page}.html").read_text(), f"Missing public contact in {page}"
     for asset in ("social.jpg", "mark.svg", "site.css", "site.js"):
         assert (SITE / "assets" / asset).is_file(), f"Missing asset: {asset}"

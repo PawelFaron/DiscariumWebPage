@@ -10,9 +10,8 @@ PAGES = {
     "index": ("Discarium — Your collection. A private performance.", "Lossless audio, original-quality video and compatible Blu-ray and DVD menus. Your own music and film collection, on Apple TV.", "home"),
     "compatibility": ("Formats & compatibility — Discarium", "Audio, video and disc formats supported by Discarium on Apple TV, including lossless surround sound, HDR10 and original disc menus.", "document"),
     "support": ("Support — Discarium", "Set up your collection, connect your receiver and get help with Discarium for Apple TV. Contact the developer directly.", "document"),
-    "updates": ("Updates — Discarium", "What's new in Discarium for Apple TV. Version 1.0 is on the App Store; version 1.1 brings disc, surround audio and video improvements and is awaiting review.", "document"),
+    "updates": ("Updates — Discarium", "What's new in Discarium for Apple TV. Disc playback, surround sound, subtitles and video improvements, with version-by-version notes.", "document"),
     "privacy": ("Privacy policy — Discarium", "How Discarium handles your library, network connections, playback history and support requests. Privacy choices and data deletion.", "document"),
-    "source": ("Open source — Discarium", "Discarium source code, software licenses and corresponding source for distributed app versions.", "document"),
     "404": ("Page not found — Discarium", "Find Discarium support, privacy information and supported formats.", "document"),
 }
 
