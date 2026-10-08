@@ -8,7 +8,9 @@ Suggested homepage / promotional language:
 
 Promotional text (under Apple's 170-character limit):
 
-> Your collection. A private performance. Lossless audio, films and concerts, with direct playback of supported Blu-ray and DVD copies and original menus.
+> Your collection. A private performance. Lossless albums, surround sound, concerts and compatible Blu-ray and DVD menus. On Apple TV.
+
+This promotional text matches the App Store submission for version 1.1 (28), submitted on 8 October 2026. Version 1.0 is publicly available; 1.1 is awaiting App Review. The public website describes the new features under that pending release in `updates.html`.
 
 Paragraph for a store description:
 

@@ -1,6 +1,8 @@
 # Discarium website
 
-Strona produktu, pomoc, formaty, polityka prywatności i źródła aplikacji **Discarium: Lossless Player**. Statyczny HTML/CSS, mały skrypt galerii, bez frameworka, usług analitycznych, cookies i zewnętrznych fontów. Publiczny kontakt: **discarium@pisz.to**.
+Strona produktu, nowości, pomoc, formaty, polityka prywatności i źródła aplikacji **Discarium: Lossless Player**. Statyczny HTML/CSS, mały skrypt galerii, bez frameworka, usług analitycznych, cookies i zewnętrznych fontów. Publiczny kontakt: **discarium@pisz.to**.
+
+Aktualizacja treści: **8 października 2026**. Wersja **1.0 (24)** jest dostępna w App Store; **1.1 (28)** czeka na App Review. Strona ma zweryfikowany odnośnik do sklepu i historię zmian w `updates.html`. Zmiany tego commita wymagają pusha oraz ręcznego deploymentu przez właściciela.
 
 ## Uruchom lokalnie
 
@@ -43,18 +45,20 @@ Docelowe adresy po poprawnym wdrożeniu:
 
 - Treść podstron: `src/pages/*.html`.
 - Wspólny nagłówek, metadane i stopka: `src/template.html`.
-- Adres strony, publiczny e-mail i data polityki: `src/config.json`.
+- Adres strony, odnośnik App Store, publiczny e-mail i data polityki: `src/config.json`.
 - Styl i galeria: `site/assets/site.css`, `site/assets/site.js`.
 - Logo, zrzuty i obraz podglądu linku: `site/assets/`; pochodzenie w [`docs/ASSETS.md`](docs/ASSETS.md).
 - Zawsze po edycji treści uruchom `python3 scripts/build.py`, a następnie `python3 scripts/verify.py`. Commituj również wygenerowane strony w `site/`.
 - Gdy zmieniasz domenę lub nazwę repo, zmień `base_url` i przebuduj strony. Zwykłe odnośniki są względne; canonical, Open Graph, sitemap i strona 404 korzystają z `base_url`.
 
-Teksty są po angielsku, zgodnie z głównym językiem sklepu. Informacja o sześciu językach dotyczy interfejsu aplikacji. Strona jest przygotowana do wydania produkcyjnego. Prezentuje obsługiwane funkcje, zrzuty aplikacji i instrukcję konfiguracji kolekcji. Po zatwierdzeniu aplikacji można dodać działający odnośnik do jej strony w App Store.
+Teksty są po angielsku, zgodnie z głównym językiem sklepu. Informacja o sześciu językach dotyczy interfejsu aplikacji. Strona prezentuje obsługiwane funkcje, zrzuty aplikacji i instrukcję konfiguracji kolekcji. Link `https://apps.apple.com/app/id6819356965` został sprawdzony po publikacji 1.0. Nowości 1.1 są oznaczone jako oczekujące na zatwierdzenie.
+
+Po publikacji 1.1 zaktualizuj status w `src/pages/updates.html`, zapowiedź na stronie głównej oraz wersję w `source.html`. W `support.html` i `compatibility.html` usuń oznaczenia „Coming in”, zachowując wskazówki dla użytkowników starszej wersji. Nie zmieniaj daty polityki prywatności przy aktualizacji samych informacji o wydaniu.
 
 ## Prywatność i źródła
 
 Polityka rozróżnia dane lokalne aplikacji, żądania do serwerów użytkownika, TestFlight, zgłoszenia przez e-mail i logi hostingu GitHub Pages. Deklaruje przechowywanie korespondencji wsparcia do 12 miesięcy od ostatniej wymiany, z wyjątkami dla aktywnego sporu lub obowiązku prawnego. Właściciel musi stosować tę zasadę albo dostosować politykę przed publikacją. Dane recenzenta Apple i prywatne hasła nie są publikowane.
 
-Strona `source.html` zawiera publiczny kontakt w sprawie odpowiadających źródeł konkretnego buildu. Właściciel ma gotowy pakiet buildu 22 w repo aplikacji: `build/testflight/Discarium-1.0-22-CorrespondingSource.tar.gz`. Przed udostępnieniem aplikacji kolejnym odbiorcom zapewnij dostarczenie tego pakietu. Zalecane: utwórz Release w **repo aplikacji**, dodaj archiwum oraz `.sha256` jako assets, sprawdź dostęp bez logowania i dodaj działający adres do `src/pages/source.html`. Archiwum ma około 134 MB: użyj Release assets, nie zwykłego commita Git (limit GitHuba na plik wynosi 100 MiB).
+Strona `source.html` zawiera publiczny kontakt w sprawie odpowiadających źródeł konkretnego buildu. W repo aplikacji znajduje się aktualny pakiet `build/testflight/Discarium-1.1-28-CorrespondingSource.tar.gz` (SHA-256 `4b305618375b11dee81a0e3df29ef06421e2272852bc606ac4255be577d91bff`). Zachowaj też pakiety wcześniejszych wydań dla ich odbiorców. Pakiet można udostępnić jako Release asset w **repo aplikacji** i dodać sprawdzony publiczny URL do `src/pages/source.html`. Dużych archiwów nie dodawaj do zwykłego commita Git.
 
-W tej witrynie celowo nie ma niedziałającego przycisku App Store, wymyślonego linku zaproszenia TestFlight ani linku do jeszcze nieopublikowanego archiwum źródeł.
+Strona zawiera działający link App Store. Linki do archiwów źródeł można dodać po ich publikacji; obecnie odbiorcy kontaktują się w tej sprawie przez publiczny e-mail.
