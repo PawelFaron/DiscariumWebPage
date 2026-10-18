@@ -10,7 +10,7 @@ Sprawdzono **6 października 2026** w oficjalnej dokumentacji Apple i GitHub. Do
 | Privacy Policy | Dostępna polityka prywatności w metadanych sklepu i wewnątrz aplikacji. Ma jasno opisywać zbierane dane, sposoby/cele ich użycia, udostępnianie, retencję, usuwanie i wybory użytkownika. | `privacy.html`; aplikacja ma już lokalny ekran prywatności. Przy kolejnym wydaniu zsynchronizuj politykę w aplikacji z wersją publiczną. |
 | Apple TV Privacy Policy | Dokumentacja dla tvOS wskazuje **tekst** polityki w osobnym polu, nie tylko link do witryny. Ogólna tabela wymienia URL jako wymagany dla wszystkich aplikacji; najlepiej uzupełnić URL oraz pole tekstowe tvOS dostępne w App Store Connect. | `docs/apple-tv-privacy.txt` do wklejenia; URL `privacy.html`. |
 | Działające linki | App Review wymaga działających odnośników do pomocy i polityki, z aktualnym kontaktem. Brak treści zastępczych. | Weryfikator lokalnych linków; po wdrożeniu właściciel sprawdza publiczne HTTPS. |
-| Rzetelny opis | Możliwości aplikacji muszą odpowiadać opisowi. | Rozdzielone bezstratne audio, brak dodatkowego kodowania wideo i faktyczny sygnał HDMI. Menu HDMV/DVD opisane osobno od nieobecnego BD-J. |
+| Rzetelny opis | Możliwości aplikacji muszą odpowiadać opisowi. | Rozdzielone bezstratne audio, brak dodatkowego kodowania wideo i faktyczny sygnał HDMI. BD-J, HDMV i DVD są opisane jako zgodne oryginalne menu; dostępność BD-J potwierdzona w opublikowanym opisie wersji 1.3. |
 
 ## Co jest opcjonalne
 
@@ -23,7 +23,7 @@ Sprawdzono **6 października 2026** w oficjalnej dokumentacji Apple i GitHub. Do
 
 - E-mail/telefon dla recenzenta w App Review Information nie zastępują **publicznego** kontaktu pomocy. Publiczny e-mail właściciel podał osobno.
 - Logo i zrzuty należą do projektu. Obrazy przedstawiają autorskie demo, nie komercyjne okładki ani prywatną bibliotekę.
-- Nie używamy odznaki „Download on the App Store” ani fikcyjnego przycisku instalacji przed wydaniem.
+- Linki instalacji prowadzą do rzeczywistej, publicznie dostępnej aplikacji `6819356965`; API Apple potwierdza wersję 1.3 (19 października 2026).
 - „Native disc playback” opisujemy jako bezpośrednie odtwarzanie kopii na Apple TV, bez wcześniejszej konwersji na serwerze. To nie deklaracja obsługi każdej płyty ani usuwania szyfrowania.
 - „Lossless audio” nie oznacza gwarancji bit-perfect HDMI lub odtwarzania obiektów TrueHD Atmos/DTS:X. Wideo z płyt jest zwykle już stratnie skompresowane; prawidłowa deklaracja to brak **dodatkowego** stratnego kodowania przez aplikację.
 - Strona zawiera informację o logach GitHub Pages: brak analityki w naszym kodzie nie oznacza, że hosting nie zapisuje adresów IP.

@@ -774,6 +774,15 @@ strong {
 .prose a:not(.button) {
   color: var(--accent);
 }
+.development-preview {
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--panel);
+  padding: clamp(20px, 3vw, 36px);
+}
+.update-image { margin: 28px 0; }
+.update-image img { width: 100%; border-radius: 10px; border: 1px solid var(--line); }
+.update-image figcaption { color: var(--faint); font-size: 13px; margin-top: 12px; }
 .contact-block {
   border-bottom: 1px solid var(--line);
   padding-bottom: 35px;

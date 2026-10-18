@@ -1,13 +1,13 @@
 Discarium Privacy Policy
-Effective 6 October 2026
+Effective 19 October 2026
 Developer: Pawel Faron
 Contact: discarium@pisz.to
 
 Discarium has no app account, advertising, tracking SDK or developer analytics service. The app does not send your media, library, playback history or network-drive passwords to the developer.
 
-Your collections, filenames, metadata, artwork, playlists, favorites, tags, ratings, notes, settings, playback positions, audio/subtitle choices and download information are stored locally on Apple TV. Network-drive passwords use Apple's Keychain. Discarium reads your selected media sources without modifying the originals.
+Your collections, filenames, metadata, artwork, playlists, favorites, tags, ratings, notes, settings, playback positions, audio/subtitle choices and download information are stored locally on Apple TV. Network-drive passwords use Apple's Keychain. Accepted SFTP server identities are stored locally. Browsing, playback and downloads read your selected media sources. Rename and Delete change files on the source only when you request those actions and the server permits them.
 
-The app connects to the SMB drives and UPnP/DLNA servers you choose. Discovery sends requests on your network. Browsing, playback and downloading send the requests and authentication information needed by those servers. A media server can supply artwork or media links on other servers. Those services receive requests and may keep logs under their own policies; the requests do not pass through the developer's servers. Use services you trust.
+The app connects to the SMB, NFS, FTP, FTPES, FTPS, SFTP, WebDAV and UPnP/DLNA servers you choose. Discovery sends requests on your network. Browsing, playback and downloading send the requests and authentication information needed by those servers. A media server can supply artwork or media links on other servers. Those services receive requests and may keep logs under their own policies; the requests do not pass through the developer's servers. Use services you trust.
 
 Local information remains while the app retains its data. tvOS may remove cached downloads when storage is needed. Remove downloads in Settings > Downloads, including partial files. Remove a connection in Settings > Connections to remove its configuration and collection locations. Revoke credentials on the server to fully revoke access. Keychain items can persist across app installations. Revoke Local Network permission in Apple TV Settings > Privacy & Security > Local Network. Deleting the app removes its local app data and downloads, but Apple or your server may retain their own data. The developer cannot access or delete data held only on your Apple TV.
 

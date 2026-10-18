@@ -83,8 +83,9 @@
           <h3>Connect your collection.</h3>
           <p>
             Open <strong>Settings → Connections → Add connection</strong>. Enter
-            your SMB server address, username and password. Save it and use
-            <strong>Test connection</strong> to check access.
+            the server address and choose SMB, NFS, FTP, FTPES, FTPS, SFTP or
+            WebDAV. Add the credentials or export path required by your server.
+            Use <strong>Test connection</strong> before saving.
           </p>
         </li>
         <li>
@@ -115,9 +116,11 @@
           Network.
         </p>
         <p>
-          Start with automatic SMB version selection and the server’s usual
-          port. If you are connecting from outside your home, your network must
-          provide a route to the server, for example through a VPN.
+          Use the server’s configured protocol and port. For SMB, start with
+          automatic version selection. For NFSv3, check the export path and UID/GID;
+          the server must allow an unprivileged client port. For WebDAV, use the
+          server’s WebDAV address. If you connect from outside home, your network
+          must provide a route to the server, for example through a VPN.
         </p>
       </details>
       <details>
@@ -129,10 +132,10 @@
           wired Ethernet and compare with a completed local download.
         </p>
         <p>
-          Video has its own buffering setting. Increasing it may help with brief
-          interruptions. From <a href="updates.html#version-1-1">version 1.1</a>,
-          disc video uses the same setting. A wired connection is a good starting
-          point for large video files.
+          Video files and disc video share a buffering setting. Increasing it can
+          help with brief interruptions. Version 1.3 also keeps disc subtitle timing
+          aligned when audio resumes after a network stall. A wired connection is
+          a good starting point for large video files.
         </p>
       </details>
       <details>
@@ -217,10 +220,10 @@
       <details>
         <summary>How do I use original disc menus?</summary>
         <p>
-          Open a disc and choose <strong>Open Disc</strong>
-          (<strong>Open disc menu</strong> in version 1.0). Use your
-          remote to navigate compatible <strong>Blu-ray HDMV</strong> and
-          <strong>DVD-Video</strong> menus.
+          Open a disc and choose <strong>Open Disc</strong>. Use your remote to
+          navigate compatible <strong>Blu-ray HDMV, BD-J</strong> and
+          <strong>DVD-Video</strong> menus. The bundled disc menu demo is in
+          <strong>Settings → About & privacy → Disc menu demo</strong>.
         </p>
         <p>
           You can also browse the disc’s programs, chapters and soundtracks from
@@ -247,8 +250,7 @@
       <details>
         <summary>How do I choose a chapter while a disc is playing?</summary>
         <p>
-          From <a href="updates.html#version-1-1">version 1.1</a>, show the
-          playback controls and choose <strong>Chapters</strong>. Select a
+          Show the playback controls and choose <strong>Chapters</strong>. Select a
           chapter to jump there. This works during DVD and supported Blu-ray
           playback when the current program provides chapters.
         </p>
@@ -256,7 +258,7 @@
       <details>
         <summary>How do I reach the video timeline with the remote?</summary>
         <p>
-          In version 1.1, press <strong>Up</strong> from the playback buttons
+          Press <strong>Up</strong> from the playback buttons
           to select the timeline. Use <strong>Left</strong> and
           <strong>Right</strong> to seek. Press <strong>Down</strong> to return
           to Play/Pause, or <strong>Up</strong> again to hide the controls.
@@ -267,8 +269,9 @@
         <p>
           Choose an available subtitle track in the playback controls. Blu-ray
           PGS subtitles are stored as pictures, so accented characters are part
-          of the image and need no text-encoding setting. Version 1.1 improves
-          their restoration and timing after seeking.
+          of the image and need no text-encoding setting. After a chapter jump,
+          captions continue from the next complete subtitle. Version 1.3 also
+          keeps them aligned when playback resumes after a network interruption.
         </p>
       </details>
       <details>
@@ -300,6 +303,16 @@
         </p>
       </details>
       <details>
+        <summary>How do I play a CUE album?</summary>
+        <p>Add its location under <strong>Settings → Collections → Audio</strong>
+          and scan it, or open the CUE file in <strong>Audio → Folders</strong>.
+          Discarium shows the individual songs, titles and durations. Keep the
+          referenced audio file alongside the CUE file, with its original name.</p>
+        <p>Play the album, choose a track or save it as a playlist. Downloading
+          the album saves each shared audio image once. Large artwork loads in
+          the background.</p>
+      </details>
+      <details>
         <summary>Can I change the visualization?</summary>
         <p>
           Choose an animation from the music player or open
@@ -316,7 +329,7 @@
     <div class="footer-top">
       <a class="brand" href="./"><img src="assets/mark.svg" alt="" width="33" height="33"><span>Discarium</span></a>
       <p>Your collection. A private performance.</p>
-      <nav aria-label="Footer navigation"><a href="updates.html">Updates</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a></nav>
+      <nav aria-label="Footer navigation"><a href="https://apps.apple.com/app/id6819356965">App Store ↗</a><a href="updates.html">Updates</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a></nav>
     </div>
     <div class="footer-bottom"><span>© 2026 Pawel Faron</span><span>Made for Apple TV. Made for your collection.</span></div>
   </footer>

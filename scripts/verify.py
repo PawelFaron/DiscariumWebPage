@@ -42,12 +42,16 @@ def main():
     config = json.loads((ROOT / "src/config.json").read_text())
     email = config["support_email"]
     assert re.fullmatch(r"[^\s@]+@[^\s@]+\.[^\s@]+", email), "Set a real public support email before deployment"
+    store = urlparse(config["app_store_url"])
+    assert store.scheme == "https" and store.netloc == "apps.apple.com", "Use the public Apple App Store URL"
     docs = {p.resolve(): Document(p) for p in SITE.glob("*.html")}
     assert len(docs) >= 5, "Missing public pages"
     for path, doc in docs.items():
         assert doc.h1 == 1 and doc.title == 1 and doc.lang == "en" and doc.description, f"Missing page metadata: {path}"
         raw = path.read_text()
         assert "{{" not in raw and "contact-pending" not in raw, f"Draft content: {path}"
+        assert "currently in testflight" not in raw.lower(), f"Obsolete release status: {path}"
+        assert config["app_store_url"] in raw, f"Missing App Store link: {path}"
         for link in doc.links:
             url = urlparse(link)
             if url.scheme:
@@ -65,6 +69,7 @@ def main():
     for asset in ("social.jpg", "mark.svg", "site.css", "site.js"):
         assert (SITE / "assets" / asset).is_file(), f"Missing asset: {asset}"
     assert (SITE / ".nojekyll").exists() and (SITE / "sitemap.xml").is_file()
+    assert not (SITE / "source.html").exists(), "The retired source page must not be published"
     forbidden = ("google-analytics", "googletagmanager", "facebook.net", "fonts.googleapis", "localStorage", "document.cookie")
     for path in SITE.rglob("*"):
         if path.suffix in {".html", ".css", ".js"}:

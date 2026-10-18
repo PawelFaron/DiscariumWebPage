@@ -1,0 +1,23 @@
+{
+  "checked_at": "2026-10-18T22:13:27.030970+00:00",
+  "storefronts": {
+    "pl": {
+      "lookup_url": "https://itunes.apple.com/lookup?id=6819356965&country=pl",
+      "trackId": 6819356965,
+      "trackName": "Discarium: Lossless Player",
+      "trackViewUrl": "https://apps.apple.com/pl/app/discarium-lossless-player/id6819356965?uo=4",
+      "version": "1.3",
+      "currentVersionReleaseDate": "2026-10-14T17:31:47Z",
+      "releaseNotes": "• New connections: NFS, FTP, FTPES, FTPS, SFTP and WebDAV, with folder browsing, playback and resumable downloads.\n\nCUE albums, richer artwork and smoother disc playback.\n\n• Open CUE albums as individual tracks, with titles, durations and gapless playback.\n• Create playlists and download CUE albums without duplicating the audio files.\n• Discover more Blu-ray and DVD covers; load large album artwork in the background.\n• See available disc audio formats before playback.\n• Jump to Blu-ray chapters faster.\n• Keep subtitles synchronized when playback resumes after a network interruption.\n• Restore folder navigation correctly after editing collection locations.\n• Bug fixes and stability improvements."
+    },
+    "us": {
+      "lookup_url": "https://itunes.apple.com/lookup?id=6819356965&country=us",
+      "trackId": 6819356965,
+      "trackName": "Discarium: Lossless Player",
+      "trackViewUrl": "https://apps.apple.com/us/app/discarium-lossless-player/id6819356965?uo=4",
+      "version": "1.3",
+      "currentVersionReleaseDate": "2026-10-14T17:31:47Z",
+      "releaseNotes": "• New connections: NFS, FTP, FTPES, FTPS, SFTP and WebDAV, with folder browsing, playback and resumable downloads.\n\nCUE albums, richer artwork and smoother disc playback.\n\n• Open CUE albums as individual tracks, with titles, durations and gapless playback.\n• Create playlists and download CUE albums without duplicating the audio files.\n• Discover more Blu-ray and DVD covers; load large album artwork in the background.\n• See available disc audio formats before playback.\n• Jump to Blu-ray chapters faster.\n• Keep subtitles synchronized when playback resumes after a network interruption.\n• Restore folder navigation correctly after editing collection locations.\n• Bug fixes and stability improvements."
+    }
+  }
+}

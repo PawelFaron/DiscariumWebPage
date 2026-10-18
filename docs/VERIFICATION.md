@@ -1,5 +1,18 @@
 # Verification
 
+## App Store 1.3 website refresh — 19 October 2026
+
+- Apple's public lookup API confirms **Discarium: Lossless Player 1.3**, released **14 October 2026**, in Poland and the United States. The public app link is `https://apps.apple.com/app/id6819356965`. Recorded the response fields in `docs/app-store-release.json`.
+- The live homepage still said “Currently in TestFlight” because GitHub Pages served the 6 October deployment (`bc92bc0`). Later pushes ran **Check website** only. The deployment workflow is manual; successful checks do not publish a new site.
+- Updated the homepage, formats, support and release history for compatible BD-J menus, CUE albums, NFS/FTP/FTPES/FTPS/SFTP/WebDAV, embedded disc covers, chapter navigation, subtitle synchronization, collections and resumable downloads. Added an App Store link to every public page.
+- MilkDrop, the new speaker meters, the simplified animation gallery and queue/navigation improvements are explicitly a **development preview**, separate from the released 1.3 features. No Apple review status is used as marketing copy.
+- Updated privacy facts for additional connections, accepted SFTP server identities and user-requested rename/delete actions. The policy date changes because its contents changed, not because the app version changed.
+- `python3 scripts/build.py`, `python3 scripts/verify.py`, `node --check site/assets/site.js` and `git diff --check` passed. The verifier now requires App Store links, rejects the obsolete status text, and rejects a regenerated source-code page.
+- Chromium: all six pages at **1440, 390 and 320 px** passed (18 layout checks): HTTP 200, one main heading, no horizontal overflow, no obsolete status, and working App Store links. Gallery click and keyboard selection worked; the CUE support FAQ opened. No JavaScript errors were observed.
+- Inspected screenshots of the desktop and phone homepage, mobile format table and the new development-preview section. Local evidence is in ignored `build/site-refresh/`.
+- With JavaScript disabled, the homepage, support and privacy pages remained readable at 390 px, App Store links were present, and the support FAQ still opened.
+- The owner explicitly authorized push and publication after these checks. Publish this commit with **Deploy GitHub Pages**, then verify the public pages; a local build or successful push alone does not establish deployment success.
+
 ## Copy cleanup — 8 October 2026
 
 - Removed public review/approval statuses and "Coming in" labels from Updates, the homepage, formats and page metadata.

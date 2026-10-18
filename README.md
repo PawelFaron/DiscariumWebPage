@@ -2,7 +2,9 @@
 
 Strona produktu, nowości, pomoc, formaty i polityka prywatności aplikacji **Discarium: Lossless Player**. Statyczny HTML/CSS, mały skrypt galerii, bez frameworka, usług analitycznych, cookies i zewnętrznych fontów. Publiczny kontakt: **discarium@pisz.to**.
 
-Aktualizacja treści: **8 października 2026**. Strona ma zweryfikowany odnośnik do sklepu i informacje o zmianach w `updates.html`. Pokazuje funkcje i numery wersji bez statusów procesu publikacji. Zmiany wymagają pusha oraz ręcznego deploymentu przez właściciela.
+Aktualizacja treści: **19 października 2026**. Oficjalne API Apple potwierdza publiczną wersję **1.3** w Polsce i USA (wydana 14 października). Strona opisuje BD-J, CUE, nowe połączenia i pozostałe funkcje 1.3. Zmiany lokalne z 18 października (MilkDrop, mierniki, kolejka i szybsze przeglądanie) mają osobną sekcję **Development preview** w `updates.html`; nie są przypisywane sklepowej wersji 1.3. Dowód dostępności: `docs/app-store-release.json`.
+
+**Dlaczego publiczna strona nadal pokazywała TestFlight:** ostatni deployment pochodził z 6 października, commit `bc92bc0`. Późniejszy push `46ca806` uruchomił tylko **Check website**, bez publikacji. Do zmiany publicznej witryny potrzebny jest push nowych commitów oraz ręczne uruchomienie **Deploy GitHub Pages**.
 
 ## Uruchom lokalnie
 
@@ -53,7 +55,7 @@ Docelowe adresy po poprawnym wdrożeniu:
 
 Teksty są po angielsku, zgodnie z głównym językiem sklepu. Informacja o sześciu językach dotyczy interfejsu aplikacji. Strona prezentuje obsługiwane funkcje, zrzuty aplikacji i instrukcję konfiguracji kolekcji. Link `https://apps.apple.com/app/id6819356965` został sprawdzony po publikacji 1.0.
 
-Informacje o kolejnych wersjach dodawaj do `src/pages/updates.html`, zachowując w pomocy wskazówki dla użytkowników starszych wersji. Nie dodawaj komunikatów o oczekiwaniu na publikację. Nie zmieniaj daty polityki prywatności przy aktualizacji samych informacji o wydaniu.
+Informacje o kolejnych wersjach dodawaj do `src/pages/updates.html`, zachowując w pomocy wskazówki dla użytkowników starszych wersji. Nie dodawaj komunikatów o oczekiwaniu na publikację. Nie zmieniaj daty polityki prywatności przy aktualizacji samych informacji o wydaniu. Data 19 października obejmuje faktyczną zmianę polityki: nowe protokoły, zapis zaakceptowanych tożsamości SFTP oraz wykonywanie Rename/Delete na żądanie użytkownika.
 
 ## Prywatność
 
